@@ -1,0 +1,117 @@
+.cart{
+  /* 定义容器宽高 */
+  width:130px;
+  height:34px ;
+  /* 背景颜色 */
+  background-color: #fff;
+  /* 边框 */
+  border: solid #eee;
+  /* 左侧内填充 */
+  padding-left: 10px;
+/* 文本左对齐 */
+  text-align: left;
+  /* 文本垂直对齐 */
+  line-height: 34px;
+  /* 设置文本颜色和文本大小 */
+  color:#e1251b;
+  font-size: 12px;
+  position: relative;
+}
+.cart img{
+  /* 定义图片大小 */
+  width:32px;
+  height:32px;
+  /* 图标与文本居中对齐 */
+  vertical-align: middle;
+  /* 左边距填充 */
+  margin-right: 10px;
+  /* 相对定位图标位置 */
+  top:-3px;
+  position: relative;
+}
+.cart span{
+  /* 因为span是行内元素，要使其具有快属性才能定义宽高等样式 */
+  /* 将span变为行内块元素 */
+  display: inline-block;
+  padding:1px 3px;
+  /* 定义背景色、字体大小、字体行高、文字颜色 和水平对齐方式*/
+  background-color: #e1251b;
+  font-size: 12px;
+  line-height: 12px;
+  color:#fff;
+  text-align: center;
+  /* 声明绝对定位，相对于购物车容器定位，因此要给cart添加样式  position: relative;*/
+  position: absolute;
+
+  top: 1px;
+  left: 29px;
+  /* CSS3样式 */
+  /* 定义一个半径 为7px的圆角*/
+  border-radius: 7px;
+
+}
+/* 轮播图容器 */
+.swiper{
+  /* 给轮播图容器添加高度和背景色 */
+  height: 400px;
+  background-color: aliceblue;
+  /* 与购物车垂直方向上存在边距 */
+  margin-top: 50px;
+  position:relative;
+}
+
+.swiper .left-button,
+.swiper .right-button{
+  /* 定义按钮大小 */
+  width: 50px;
+  height: 100%;
+  /* 图片对齐方式 */
+  text-align: center;
+  /* 通过行高设置图片垂直居中，比较依赖外部容器的高度*/
+  /* line-height:400px ; */
+  position: relative;
+}
+.swiper .right-button{
+  position:absolute;
+  right: 0;
+  top:0
+}
+.swiper .left-button img,
+.swiper .right-button img{
+/* 技巧 只给图片定义宽度样式 ，高度会根据原始图片的比例自动缩放*/
+  width: 40px;
+  position:absolute;
+  top:50%;
+  left:5px;
+  margin-top: -20px;
+}
+.swiper .slider ul,.swiper .slider li {
+/* 去掉列表默认填充和间距 */
+  
+  padding: 0;
+  margin: 0;
+  /* 定义列表高度 */
+  height:30px;
+  /* 去掉列表的项目符号 */
+  list-style: none;
+
+}
+.swiper .slider ul{
+  /* 通过绝对定位水平对齐居中 */
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  left:50%;
+  margin-left:-75px;
+}
+
+.swiper .slider li{
+  float:left;
+  /* li宽度为30px */
+  width: 30px;
+
+}
+.swiper .slider li img{
+  width: 30px;
+  height: 30px;
+}
